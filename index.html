@@ -1,0 +1,1043 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Someone Special ❤️</title>
+<link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+scroll-behavior:auto;
+}
+
+html{
+scroll-snap-type:none;
+}
+
+body{
+perspective:1200px;
+font-family:'Poppins',sans-serif;
+background:#050816;
+overflow-x:hidden;
+color:white;
+}
+
+body::-webkit-scrollbar{
+width:0;
+}
+
+section{
+min-height:100vh;
+width:100%;
+display:flex;
+justify-content:center;
+align-items:center;
+flex-direction:column;
+position:relative;
+padding:80px 20px;
+scroll-snap-align:none;
+overflow:hidden;
+display:flex;
+}
+
+.stars{
+position:fixed;
+width:100%;
+height:100%;
+background:
+radial-gradient(circle at 10% 20%, rgba(255,255,255,0.12) 2px, transparent 2px),
+radial-gradient(circle at 80% 30%, rgba(255,255,255,0.1) 2px, transparent 2px),
+radial-gradient(circle at 60% 80%, rgba(255,255,255,0.12) 2px, transparent 2px),
+linear-gradient(to bottom,#050816,#11162b,#20152f);
+background-size:300px 300px;
+animation:moveStars 50s linear infinite;
+z-index:-10;
+}
+
+@keyframes moveStars{
+0%{transform:translateY(0)}
+100%{transform:translateY(-400px)}
+}
+
+.anime-love-scene{
+position:fixed;
+inset:0;
+pointer-events:none;
+z-index:-2;
+overflow:hidden;
+}
+
+.anime-boy,
+.anime-girl{
+right:0;
+background-image:url('https://i.ibb.co/W46Yy3Pp/IMG-9462.jpg');
+background-position:center top;
+animation-delay:2s;
+}
+position:absolute;
+bottom:0;
+width:320px;
+height:520px;
+background-size:cover;
+background-position:center;
+opacity:0.42;
+filter:drop-shadow(0 0 35px rgba(255,192,203,0.6));
+animation:characterMove 6s ease-in-out infinite;
+}
+
+.anime-boy{
+left:0;
+background-image:url('https://i.ibb.co/V08CTpnV/IMG-9461.jpg');
+background-position:center top;
+}
+left:3%;
+background-image:url('https://i.ibb.co/V08CTpnV/IMG-9461.jpg');
+}
+
+.anime-girl{
+right:3%;
+background-image:url('https://i.ibb.co/W46Yy3Pp/IMG-9462.jpg');
+animation-delay:2s;
+}
+
+.city-lights{
+position:absolute;
+bottom:0;
+left:0;
+width:100%;
+height:180px;
+background:linear-gradient(to top,rgba(255,180,220,0.12),transparent);
+filter:blur(25px);
+}
+
+.shooting-star{
+position:absolute;
+top:20%;
+left:-10%;
+width:220px;
+height:2px;
+background:linear-gradient(to right,white,transparent);
+transform:rotate(-15deg);
+animation:shooting 7s linear infinite;
+opacity:0.7;
+}
+
+@keyframes shooting{
+0%{transform:translateX(0) translateY(0) rotate(-15deg);opacity:0}
+10%{opacity:1}
+100%{transform:translateX(140vw) translateY(20vh) rotate(-15deg);opacity:0}
+}
+
+@keyframes characterMove{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-18px)}
+}
+
+.anime-bg{
+opacity:1;
+}
+position:fixed;
+width:100%;
+height:100%;
+left:0;
+top:0;
+pointer-events:none;
+z-index:-1;
+overflow:hidden;
+}
+
+.anime-couple{
+position:absolute;
+bottom:0;
+right:0;
+width:420px;
+opacity:0.18;
+filter:drop-shadow(0 0 25px rgba(255,192,203,0.5));
+animation:animeFloat 8s ease-in-out infinite;
+}
+
+.glow{
+position:absolute;
+width:500px;
+height:500px;
+right:-100px;
+bottom:-100px;
+background:radial-gradient(circle,rgba(255,120,180,0.25),transparent 70%);
+filter:blur(40px);
+animation:pulseGlow 6s infinite;
+}
+
+@keyframes animeFloat{
+0%,100%{transform:translateY(0px)}
+50%{transform:translateY(-25px)}
+}
+
+@keyframes pulseGlow{
+0%,100%{opacity:0.5;transform:scale(1)}
+50%{opacity:1;transform:scale(1.1)}
+}
+
+.moon{
+position:fixed;
+top:70px;
+right:70px;
+width:130px;
+height:130px;
+border-radius:50%;
+background:radial-gradient(circle,#fff,#e5e5ff,#c8c8ff);
+box-shadow:0 0 80px rgba(255,255,255,0.5);
+animation:pulseMoon 4s infinite;
+z-index:-2;
+}
+
+@keyframes pulseMoon{
+0%,100%{transform:scale(1)}
+50%{transform:scale(1.08)}
+}
+
+.title{
+font-size:4rem;
+font-family:'Great Vibes',cursive;
+text-align:center;
+margin-bottom:20px;
+text-shadow:0 0 25px rgba(255,150,220,0.8);
+animation:fadeUp 2s ease;
+}
+
+.subtitle{
+font-size:1.2rem;
+text-align:center;
+max-width:700px;
+line-height:2;
+opacity:0.9;
+animation:fadeUp 3s ease;
+}
+
+@keyframes fadeUp{
+from{
+opacity:0;
+transform:translateY(80px);
+}
+
+to{
+opacity:1;
+transform:translateY(0);
+}
+}
+
+.btn{
+margin-top:35px;
+padding:14px 38px;
+border:none;
+border-radius:40px;
+background:linear-gradient(45deg,#ff6ba6,#ff9bc9);
+color:white;
+font-size:1rem;
+font-weight:bold;
+cursor:pointer;
+transition:0.4s;
+box-shadow:0 0 30px rgba(255,105,180,0.4);
+}
+
+.screen-transition{
+position:fixed;
+inset:0;
+background:radial-gradient(circle at center,#ff7eb6,#11162b,#050816);
+z-index:9999;
+opacity:0;
+pointer-events:none;
+transform:scale(0.8);
+transition:1.2s ease;
+}
+
+.screen-transition.active{
+opacity:1;
+transform:scale(1.4);
+}
+
+.page{
+animation:pageHidden 0.6s;
+}
+
+.show-page{
+animation:pageReveal 2s ease forwards;
+}
+
+@keyframes pageReveal{
+0%{
+opacity:0;
+transform:scale(1.15) blur(20px);
+filter:blur(18px);
+}
+40%{
+opacity:0.3;
+filter:blur(10px);
+}
+100%{
+opacity:1;
+transform:scale(1);
+filter:blur(0px);
+}
+}
+
+@keyframes pageHidden{
+from{opacity:0}
+to{opacity:1}
+}
+
+.page::before{
+content:'';
+position:absolute;
+inset:0;
+background:linear-gradient(to bottom,rgba(255,255,255,0.02),transparent,rgba(255,192,203,0.04));
+pointer-events:none;
+}
+
+.btn:hover{
+transform:scale(1.08);
+box-shadow:0 0 40px rgba(255,105,180,0.8);
+}
+
+.envelope{
+width:320px;
+height:220px;
+background:linear-gradient(145deg,#ffd6e7,#ffbfd8);
+margin-top:50px;
+position:relative;
+border-radius:12px;
+box-shadow:0 30px 60px rgba(0,0,0,0.5);
+animation:envelopeCome 2.5s ease forwards;
+transform:scale(0.2);
+opacity:0;
+}
+
+@keyframes envelopeCome{
+0%{
+transform:translateY(250px) scale(0.1) rotateX(70deg);
+opacity:0;
+filter:blur(10px);
+}
+50%{
+transform:translateY(60px) scale(0.7) rotateX(20deg);
+opacity:0.7;
+filter:blur(2px);
+}
+100%{
+transform:translateY(0) scale(1) rotateX(0deg);
+opacity:1;
+filter:blur(0);
+}
+}
+
+.envelope:before{
+content:'';
+position:absolute;
+width:100%;
+height:100%;
+background:#ff98bf;
+clip-path:polygon(0 0,50% 55%,100% 0);
+transform-origin:top;
+animation:openLetter 2s ease forwards 2s;
+}
+
+@keyframes openLetter{
+0%{
+transform:rotateX(0deg);
+}
+40%{
+transform:rotateX(20deg);
+}
+70%{
+transform:rotateX(120deg);
+}
+100%{
+transform:rotateX(180deg);
+}
+}
+
+.letter{
+position:absolute;
+width:85%;
+height:180px;
+background:white;
+left:7.5%;
+top:20px;
+border-radius:10px;
+color:#333;
+padding:20px;
+font-family:'Great Vibes',cursive;
+font-size:1.8rem;
+text-align:center;
+box-shadow:0 15px 40px rgba(0,0,0,0.3);
+opacity:0;
+animation:letterRise 2s ease forwards 3s;
+}
+
+@keyframes letterRise{
+0%{
+transform:translateY(80px) scale(0.7);
+opacity:0;
+}
+60%{
+transform:translateY(-60px) scale(1.02);
+opacity:1;
+}
+100%{
+transform:translateY(-120px) scale(1);
+opacity:1;
+}
+}
+
+.glass{
+background:rgba(255,245,250,0.12);
+backdrop-filter:blur(18px);
+padding:45px;
+border-radius:35px;
+max-width:1100px;
+box-shadow:0 20px 60px rgba(255,182,193,0.25);
+border:1px solid rgba(255,255,255,0.18);
+position:relative;
+overflow:hidden;
+}
+background:rgba(255,255,255,0.08);
+backdrop-filter:blur(12px);
+padding:40px;
+border-radius:30px;
+max-width:900px;
+box-shadow:0 20px 50px rgba(0,0,0,0.3);
+border:1px solid rgba(255,255,255,0.1);
+}
+
+.scene-title{
+font-size:3.4rem;
+font-family:'Great Vibes',cursive;
+margin-bottom:25px;
+text-align:center;
+color:#fff;
+text-shadow:0 0 20px rgba(255,182,193,0.7);
+}
+font-size:3rem;
+font-family:'Great Vibes',cursive;
+margin-bottom:20px;
+text-align:center;
+}
+
+.scene-text{
+font-size:1.1rem;
+line-height:2;
+text-align:center;
+opacity:0.92;
+}
+
+.scrapbook{
+width:100%;
+max-width:1100px;
+background:linear-gradient(145deg,#fff0f6,#ffdbe9);
+padding:50px 30px;
+border-radius:40px;
+box-shadow:
+0 20px 60px rgba(255,182,193,0.35),
+inset 0 0 20px rgba(255,255,255,0.7);
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+align-items:center;
+gap:35px;
+position:relative;
+overflow:hidden;
+border:8px solid rgba(255,255,255,0.65);
+}
+
+.scrapbook::before{
+content:'';
+position:absolute;
+inset:0;
+background:
+radial-gradient(circle at 20% 20%,rgba(255,255,255,0.6),transparent 20%),
+radial-gradient(circle at 80% 30%,rgba(255,192,203,0.25),transparent 25%),
+radial-gradient(circle at 40% 80%,rgba(255,255,255,0.5),transparent 20%);
+pointer-events:none;
+}
+display:flex;
+flex-wrap:wrap;
+justify-content:center;
+gap:40px;
+margin-top:40px;
+width:100%;
+}
+
+.card{
+width:220px;
+height:320px;
+position:relative;
+transition:0.6s ease;
+transform:rotate(calc(var(--r) * 1deg));
+}
+
+.card:nth-child(1){--r:-4}
+.card:nth-child(2){--r:3}
+.card:nth-child(3){--r:-2}
+.card:nth-child(4){--r:5}
+.card:nth-child(5){--r:-5}
+.card:nth-child(6){--r:2}
+
+.card:hover{
+transform:scale(1.06) rotate(0deg) translateY(-10px);
+}
+width:280px;
+height:420px;
+perspective:1000px;
+}
+
+.inner{
+width:100%;
+height:100%;
+position:relative;
+transform-style:preserve-3d;
+transition:1s;
+}
+
+.card:hover .inner{
+transform:rotateY(180deg);
+}
+
+.front,.back{
+position:absolute;
+width:100%;
+height:100%;
+backface-visibility:hidden;
+border-radius:20px;
+overflow:hidden;
+box-shadow:0 20px 40px rgba(0,0,0,0.4);
+}
+
+.front{
+background:white;
+padding:12px;
+border-radius:24px;
+box-shadow:0 15px 35px rgba(0,0,0,0.18);
+position:relative;
+overflow:hidden;
+}
+background:white;
+padding:15px;
+}
+
+.front img{
+width:100%;
+height:200px;
+object-fit:cover;
+border-radius:12px;
+border:8px solid white;
+box-shadow:0 8px 20px rgba(0,0,0,0.25);
+filter:saturate(1.05) contrast(1.05);
+}
+width:100%;
+height:320px;
+object-fit:cover;
+border-radius:15px;
+}
+
+.caption{
+color:#ff4f8b;
+text-align:center;
+margin-top:10px;
+font-family:'Great Vibes',cursive;
+font-size:2rem;
+text-shadow:0 2px 10px rgba(255,182,193,0.5);
+}
+color:#222;
+text-align:center;
+margin-top:15px;
+font-family:'Great Vibes',cursive;
+font-size:2rem;
+}
+
+.back{
+background:linear-gradient(145deg,#ff8db8,#ffc9dc);
+transform:rotateY(180deg);
+display:flex;
+justify-content:center;
+align-items:center;
+padding:25px;
+font-size:1.1rem;
+text-align:center;
+line-height:1.8;
+}
+
+.quote{
+margin-top:30px;
+font-size:1.15rem;
+text-align:center;
+opacity:0.95;
+font-style:italic;
+color:#ffd9ea;
+text-shadow:0 0 12px rgba(255,182,193,0.4);
+line-height:2;
+}
+margin-top:25px;
+font-size:1.2rem;
+text-align:center;
+opacity:0.9;
+font-style:italic;
+}
+
+.face{
+font-size:4rem;
+margin-top:35px;
+line-height:1.6;
+display:flex;
+justify-content:center;
+align-items:center;
+width:100%;
+text-align:center;
+filter:drop-shadow(0 0 12px rgba(255,255,255,0.3));
+animation:faceBounce 4s ease-in-out infinite;
+}
+
+@keyframes faceBounce{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-10px) scale(1.04)}
+}
+
+@keyframes cardFloat{
+0%,100%{transform:translateY(0) rotate(-2deg)}
+50%{transform:translateY(-14px) rotate(2deg)}
+}
+font-size:5rem;
+margin-top:25px;
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0)}
+50%{transform:translateY(-15px)}
+}
+
+.lantern{
+position:absolute;
+font-size:2rem;
+opacity:0.7;
+animation:fly 14s linear infinite;
+}
+
+@keyframes fly{
+0%{
+transform:translateY(100vh);
+opacity:0;
+}
+50%{
+opacity:1;
+}
+100%{
+transform:translateY(-120vh);
+opacity:0;
+}
+}
+
+.final{
+text-align:center;
+}
+
+.final h1{
+font-size:5rem;
+font-family:'Great Vibes',cursive;
+margin-bottom:30px;
+text-shadow:0 0 30px rgba(255,150,220,0.7);
+}
+
+.final p{
+max-width:800px;
+line-height:2;
+font-size:1.2rem;
+}
+
+.heart{
+font-size:7rem;
+margin-top:30px;
+animation:heartbeat 2s infinite;
+}
+
+@keyframes heartbeat{
+0%,100%{transform:scale(1)}
+50%{transform:scale(1.2)}
+}
+
+.sakura{
+position:absolute;
+width:15px;
+height:15px;
+background:linear-gradient(#ffb3d9,#ff78aa);
+border-radius:70% 0 70% 0;
+animation:fall linear infinite;
+opacity:0.7;
+}
+
+@keyframes fall{
+0%{
+transform:translateY(-100px) rotate(0deg);
+}
+100%{
+transform:translateY(120vh) rotate(720deg);
+}
+}
+
+@media(max-width:768px){
+.title{
+font-size:3rem;
+}
+
+.scene-title{
+font-size:2.2rem;
+}
+
+.final h1{
+font-size:3rem;
+}
+
+.card{
+width:90%;
+}
+}
+</style>
+</head>
+
+<body>
+<audio id="bgMusic" autoplay loop>
+<source src="https://files.catbox.moe/ol3k2r.mp3" type="audio/mp3">
+</audio>
+
+<div class="stars"></div>
+
+<div class="anime-love-scene">
+<div class="anime-boy"></div>
+<div class="anime-girl"></div>
+<div class="city-lights"></div>
+<div class="shooting-star"></div>
+</div>
+
+<div class="anime-bg">
+<img class="anime-couple" src="https://i.ibb.co/nNbyZVxh/IMG-9014.png">
+<div class="glow"></div>
+</div>
+<div class="moon"></div>
+
+<div class="lantern" style="left:10%;animation-duration:12s;">🏮</div>
+<div class="lantern" style="left:30%;animation-duration:16s;">🏮</div>
+<div class="lantern" style="left:70%;animation-duration:14s;">🏮</div>
+<div class="lantern" style="left:90%;animation-duration:18s;">🏮</div>
+
+<script>
+for(let i=0;i<40;i++){
+const sakura=document.createElement('div');
+sakura.classList.add('sakura');
+sakura.style.left=Math.random()*100+'%';
+sakura.style.animationDuration=(6+Math.random()*8)+'s';
+sakura.style.opacity=Math.random();
+document.body.appendChild(sakura);
+}
+</script>
+
+<section class="page" class="page active">
+<h1 class="title">A Letter From My Heart</h1>
+<p class="subtitle">
+Some feelings are too deep for simple messages...
+So I made this little world for you.
+</p>
+
+<div class="envelope">
+<div class="letter">
+I am sorry... ❤️<br>
+But more than sorry,
+I want to see you smile again.
+</div>
+</div>
+
+<a href="#memory1">
+<button class="btn">Next Memory ✨Open Our Memories</button>
+</a>
+</section>
+
+<section class="page" id="memory1" class="page">
+<div class="glass">
+<h2 class="scene-title">The First Smile</h2>
+<p class="scene-text">
+I still remember how your smile made everything feel lighter.
+Like suddenly the whole world became softer.
+</p>
+
+<div class="scrapbook">
+<div class="card">
+<div class="inner">
+<div class="front">
+<img src="https://i.ibb.co/sk5jsv4/IMG-9466.jpg">
+<div class="caption">Your Smile</div>
+</div>
+<div class="back">
+Your smile became one of my favorite places.
+</div>
+</div>
+</div>
+</div>
+
+<div class="card">
+<div class="inner">
+<div class="front">
+<img src="https://i.ibb.co/BKZTTdL4/IMG-2256.jpg">
+<div class="caption">Your Eyes</div>
+</div>
+<div class="back">
+Your eyes always felt safer than home.
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<div class="quote">
+🎵 “Even silence feels beautiful with you...” 🎵
+</div>
+</div>
+</section>
+
+<section class="page">
+<div class="glass">
+<h2 class="scene-title">Late Night Thoughts 🌙</h2>
+<p class="scene-text">
+Sometimes I stay awake just replaying memories.
+Thinking about your laugh.
+Thinking about moments I could've handled better.
+Thinking about how much you matter to me.
+</p>
+
+<div class="face">(˶ᵔ ᵕ ᵔ˶)</div>
+</div>
+</section>
+
+<section class="page">
+<div class="glass">
+<h2 class="scene-title">Anime Rooftop Scene</h2>
+<p class="scene-text">
+Imagine us on a rooftop at night.
+Wind moving softly.
+City lights glowing far away.
+And me quietly holding your hand because
+I don't want to lose you.
+</p>
+
+<div class="quote">
+🎵 “In every universe... I think I'd still find you.” 🎵
+</div>
+</div>
+</section>
+
+<section class="page">
+<div class="glass">
+<h2 class="scene-title">Mini Scrapbook 📸</h2>
+
+<div class="scrapbook">
+<div class="card">
+<div class="inner">
+<div class="front">
+<img src="https://i.ibb.co/dsJsT8Zk/98ba4001-e267-49c5-83e9-69a4979e1ed1.jpg">
+<div class="caption">Memories</div>
+</div>
+<div class="back">
+I replay our moments more than you know.
+</div>
+</div>
+</div>
+</div>
+
+<div class="card">
+<div class="inner">
+<div class="front">
+<img src="https://i.ibb.co/GQyJTVPq/939b3a43-cfeb-4486-a9b0-dc0daca955eb.jpg">
+<div class="caption">Rainy Days</div>
+</div>
+<div class="back">
+I wish we could walk together forever.
+</div>
+</div>
+</div>
+</div>
+
+<div class="card">
+<div class="inner">
+<div class="front">
+<img src="https://i.ibb.co/5W5z6Nkd/IMG-5851.jpg">
+<div class="caption">Favorite Person</div>
+</div>
+<div class="back">
+No matter what happens... you stay special.
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<section class="page">
+<div class="glass">
+<h2 class="scene-title">Train Window Feelings 🚆</h2>
+<p class="scene-text">
+Like an anime train scene...
+Watching city lights pass by while quietly missing someone.
+That's how some nights feel without you.
+</p>
+
+<div class="quote">
+🎵 “Some people become home to your heart.” 🎵
+</div>
+</div>
+</section>
+
+<section class="page">
+<div class="glass">
+<h2 class="scene-title">Things I Love About You ❤️</h2>
+<p class="scene-text">
+❤️ Your smile<br><br>
+❤️ Your voice<br><br>
+❤️ Your little reactions<br><br>
+❤️ Your eyes<br><br>
+❤️ Your presence<br><br>
+❤️ Even your anger sometimes 😭
+</p>
+</div>
+</section>
+
+<section class="page">
+<div class="glass">
+<h2 class="scene-title">If I Hurt You...</h2>
+<p class="scene-text">
+I truly never wanted to become the reason behind your sadness.
+You deserve soft love.
+Care.
+Patience.
+Effort.
+And understanding.
+
+I promise to try harder.
+</p>
+
+<div class="face">(づ｡◕‿‿◕｡)づ</div>
+</div>
+</section>
+
+<section class="page">
+<div class="glass">
+<h2 class="scene-title">Thank You</h2>
+<p class="scene-text">
+Thank you for every memory.
+Every smile.
+Every little moment.
+You changed something inside me forever.
+</p>
+
+<div class="quote">
+🎵 “You made my ordinary world feel magical.” 🎵
+</div>
+</div>
+</section>
+
+<section class="page">
+<div class="final">
+<h1>Can We Smile Again?</h1>
+
+<p>
+I know one webpage cannot fix everything...
+But I wanted to create something beautiful for you.
+Something emotional.
+Something warm.
+Something that reminds you how important you are to me.
+
+If your heart still has a tiny place for me...
+then let me slowly make things right again. ❤️
+</p>
+
+<div class="heart">❤️</div>
+
+<button class="btn" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+Replay Our Story
+</button>
+</div>
+</section>
+
+<script>
+const pages=document.querySelectorAll('.page');
+let currentPage=0;
+
+pages.forEach((p,i)=>{
+if(i===0){
+p.style.display='flex';
+}else{
+p.style.display='none';
+}
+});
+
+function nextPage(){
+pages[currentPage].classList.remove('active');
+pages[currentPage].style.display='none';
+currentPage++;
+if(currentPage>=pages.length){currentPage=pages.length-1;}
+pages[currentPage].style.display='flex';
+pages[currentPage].classList.add('active');
+window.scrollTo({top:0,behavior:'smooth'});
+}
+
+const buttons=document.querySelectorAll('.btn');
+buttons.forEach(btn=>{
+if(btn.innerText.toLowerCase().includes('open') || btn.innerText.toLowerCase().includes('next')){
+btn.closest('a')?.removeAttribute('href');
+btn.onclick=nextPage;
+}
+});
+</script>
+
+<script>
+const pages=document.querySelectorAll('.page');
+let current=0;
+
+pages.forEach((page,index)=>{
+if(index!==0){
+page.style.display='none';
+}
+});
+
+const transition=document.createElement('div');
+transition.classList.add('screen-transition');
+document.body.appendChild(transition);
+
+function nextPage(){
+transition.classList.add('active');
+
+setTimeout(()=>{
+pages[current].style.display='none';
+current++;
+
+if(current>=pages.length){
+current=pages.length-1;
+}
+
+pages[current].style.display='flex';
+pages[current].classList.add('show-page');
+
+setTimeout(()=>{
+transition.classList.remove('active');
+},1200);
+
+},900);
+}
+
+document.querySelectorAll('.btn').forEach(btn=>{
+btn.onclick=nextPage;
+});
+</script>
+
+</body>
+</html>
